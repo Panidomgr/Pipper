@@ -136,11 +136,3 @@ body > div {
 main {
     max-width: 60vw;
 }
-
-a {
-  pointer-events: auto;
-}
-
-div {
-  pointer-events: none;
-}
