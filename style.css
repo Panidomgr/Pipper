@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 10%);
+    margin: 0;
+}
+
+header {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+
+header > div {
+    min-height: 50px;
+    width: 150px;
+}
+
+header > div > img {
+    width: 100%;
+}
+
+nav {
+    border: 1px solid black;
+    height: 50vh;
+    width: 100%;
+    border-radius: 25px;
+    margin-right: 2vw;
+    background-color: hsl(0, 0%, 50%);
+    box-shadow: 10px 10px 20px black;
+    padding: 5px;
+}
+
+nav h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+nav h2 {
+    cursor: pointer;
+}
+
+body > div {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.post {
+    border: 1px solid black;
+    width: 100%;
+    min-height: 100px;
+    max-width: 100vw;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 25%);
+    box-shadow: 5px 5px 10px black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.name {
+    color: white;
+    margin-right: 10px;
+}
+
+.username {
+    color: hsl(0, 0%, 60%);
+}
+
+.postInfo > div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.postInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+.interactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.interactions * {
+    font-size: 1.2em;
+}
+
+.replies::before {
+        content: '\f086';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 10px;
+}
+
+.likes::before {
+    content: '\f004';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.postContent img {
+    border-radius: 10px;
+}
+
+.postContent p {
+    font-size: 1.5em;
+}
+
+main {
+    max-width: 60vw;
+}
